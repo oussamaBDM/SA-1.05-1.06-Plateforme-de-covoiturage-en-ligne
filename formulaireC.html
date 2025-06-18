@@ -1,0 +1,95 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/formulaireC.css" />
+</head>
+<header>
+<div class="logo">
+    <img src="img/Nintendo.svg.png" alt="Logo Nintendo">
+</div>
+</header>
+<body>
+    <fieldset>
+        <legend>Informations Personnelles</legend>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+        <ul></ul>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required />
+        <ul></ul>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="email@example.com" required />
+        <ul></ul>
+
+        <label for="telephone">Téléphone :</label>
+        <input type="text" id="telephone" name="telephone" placeholder="06 xx xx xx xx" required />
+        <ul></ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>Informations sur le Trajet</legend>
+        
+        <label for="depart">Lieu de départ :</label>
+        <input type="text" id="depart" name="depart" placeholder="Ville de départ" required />
+        <ul></ul>
+
+        <label for="arrivee">Lieu d'arrivée :</label>
+        <input type="text" id="arrivee" name="arrivee" placeholder="Ville d'arrivée" required />
+        <ul></ul>
+
+        <label for="date_depart">Date de départ :</label>
+        <input type="date" id="date_depart" name="date_depart" required />
+        <ul></ul>
+
+        <label for="horaire">Horaire de départ :</label>
+        <input type="time" id="horaire" name="horaire" required />
+        <ul></ul>
+
+        <label for="places_recherchees">Nombre de places recherchées :</label>
+        <input type="number" id="places_recherchees" name="places_recherchees" min="1" max="6" required />
+        <ul></ul>
+
+        <label for="confort">Niveau de confort souhaité :</label>
+        <select name="confort" id="confort" required>
+            <option value="">Sélectionnez un niveau :</option>
+            <option value="standard">Standard</option>
+            <option value="confort">Confort</option>
+            <option value="luxe">Luxe</option>
+        </select>
+        <ul></ul>
+
+        <label for="commentaire">Commentaires (facultatif) :</label>
+        <textarea name="commentaire" id="commentaire" placeholder="Informations supplémentaires" rows="4"></textarea>
+        <ul></ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>Conditions de Voyage</legend>
+
+        <label for="non_fumeur">Non-fumeur :</label>
+        <input type="checkbox" id="non_fumeur" name="non_fumeur" />
+        <ul></ul>
+
+        <label for="animaux">Animaux autorisés :</label>
+        <input type="checkbox" id="animaux" name="animaux" />
+        <ul></ul>
+
+        <label for="bagages">Bagages autorisés :</label>
+        <input type="checkbox" id="bagages" name="bagages" />
+        <ul></ul>
+    </fieldset>
+
+    <input type="submit" value="Soumettre la demande" />
+    <input type="reset" value="Effacer" />
+</body>
+<footer>
+    <p>&copy; 2024 Nintendo | <a href="https://www.nintendo.com/">Site Officiel</a> | Suivez-nous sur : 
+        <a href="https://x.com/nintendofrance">Twitter</a> | 
+        <a href="https://www.facebook.com/NintendoFR/">Facebook</a> | 
+        <a href="https://www.instagram.com/nintendofr/?hl=fr">Instagram</a>
+    </p>
+</footer>
+</html>
